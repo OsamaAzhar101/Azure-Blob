@@ -1,4 +1,4 @@
-package com.nisum.Azure.controllers;
+package com.nisum.azure.controllers;
 
 import com.azure.storage.blob.BlobClient;
 import com.azure.storage.blob.BlobContainerClient;
@@ -19,7 +19,6 @@ public class BlobController {
 
   private final BlobServiceClient blobServiceClient;
 
-//  @Autowired
   public BlobController(BlobServiceClient blobServiceClient) {
     this.blobServiceClient = blobServiceClient;
   }
@@ -30,7 +29,6 @@ public class BlobController {
 
     String containerName = "createtestcontainer";
     BlobContainerClient containerClient = blobServiceClient.getBlobContainerClient(containerName);
-//    containerClient.create();
 
     String blobName = file.getOriginalFilename();
     BlobClient blobClient = containerClient.getBlobClient(blobName);

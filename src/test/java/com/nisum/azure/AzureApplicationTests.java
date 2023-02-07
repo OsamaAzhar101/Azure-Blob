@@ -1,4 +1,4 @@
-package com.nisum.Azure;
+package com.nisum.azure;
 
 //import org.junit.jupiter.api.Test;
 //import org.springframework.boot.test.context.SpringBootTest;
